@@ -24,6 +24,14 @@ public class Lesson2 {
         System.out.println(kilos + " kg " + grams + " g");
 
         System.out.println("Task3");
+        double P = 50000;
+        double month = 3;
+        double percents = 10.5;
+        double days = month * 30;
+        double daysInYear = 365;
+        double S = P * Math.pow((1 + percents * days / 100 / daysInYear), month); //сумма денежных средств, причитающихся к возврату вкладчику по окончании срока депозита
+        double Sp = S - P; //сумма процентов (доходов)
+        System.out.println("Cумма процентов (доходов): " + Sp);
 
     }
 }
